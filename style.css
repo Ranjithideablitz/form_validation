@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: palegreen;
+    display: grid;
+    place-items: center;
+}
+.container{
+    background: #fff;
+    width: 400px;
+    padding: 10px;
+}
+.container h3{
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+form{
+    padding: 30px 40px;
+}
+.form-group{
+    color: #333;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #3c40c6;
+}
+.form-group input{
+    border: 2px solid #f0f0f0;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+.form-group p{
+    font-size: 10px;
+    margin-top: 5px;
+    /* visibility: hidden; */
+}
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3c40c6;
+    color: #fff;
+    background: #3c40c6;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.contactform-buttons {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group p{
+    visibility: hidden;
+}
+.form-group.error p{
+    color: #f53b57;
+    visibility: visible;
+}
+.form-group.error input{
+    border-color: #f53b57;
+}
+.form-group.success input{
+    border-color: #05c46b;
+}
